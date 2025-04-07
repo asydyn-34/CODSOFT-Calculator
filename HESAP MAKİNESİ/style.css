@@ -1,0 +1,108 @@
+   body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211,211,211);
+    color: rgb(255,255,255);
+}
+
+.calculator {
+  width: 350px;
+  background-color: rgb(0,0,0);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding: 20px;
+  margin: 50px auto;
+  
+
+}
+
+#display {
+    width: 90%;
+    padding: 10px;
+    height:50px ;
+    text-align: right;
+    font-size:28px ;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(255,255,255,0.3);
+    color: rgb(255,255,255);
+
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    flex-basis: 20%;  
+    height: 60px; 
+    font-size: 18px;
+    border-radius: 10px;  
+}
+
+.clear {
+    background-color: rgb(255,165,0);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+}
+.operator {
+    background-color: rgb(255,165,0);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+}
+
+.equal {
+    background-color: rgb(255,165,0);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+} 
+
+#fullscreen {
+    background-color: rgb(255,165,0);
+    color: rgb(255,255,255);
+    border-radius: 10px;   
+}
+
+button:hover {
+    background-color: rgb(255,127,0);
+    cursor: pointer;
+}
+
+/*Medya Sorguları*/
+@media only screen and (max-width: 600px) {
+    /* Telefonlar için  */
+    body {
+        background-color: rgb(211,211,211);
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    /* Tabletler için  */
+    body {
+        background-color: rgb(0,0,0);
+    }
+}
+
+
+@media only screen and (min-width: 993px) {
+    /* Masaüstü bilgisayarlar için */
+    body {
+        background-color: rgba(255,255,255,0.3);
+    }
+}
+
+
+
+
+
+
+
